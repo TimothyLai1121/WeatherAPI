@@ -1,0 +1,23 @@
+/* JumboTron */
+
+.jumbotron {
+    margin: 100px;
+    border-radius: 5px;
+}    
+
+
+
+.my-4 {
+    border-top: 1px solid black;
+    width: 100%;
+    animation: expand 0.5s ease-in-out;
+}
+
+@keyframes expand {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
