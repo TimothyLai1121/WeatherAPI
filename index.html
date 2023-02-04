@@ -8,49 +8,77 @@
     <link rel="icon" type="image/x-icon" href="./assets/img/Papirus-Team-Papirus-Apps-Weather.ico">
     <!-- Using BootStrap 4.6.1-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- https://cdnjs.com/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<>
     <div class="jumbotron">
         <h1 class="display-3">WeatherApiStation</h1>
         <p class="lead">This WeatherApiStation is made with BootStrap and my first time implement API to my projects</p>
         <hr class="my-4">
         <p>GitHub</p>
     </div>
+    <!-- Container -->
     <div class="container">
-        <!-- Upper Half -->
-      
-          
-        <!-- Lower Half -->
-        <div class="row lowerHalf">
-            <div class="dayone col">Monday</div> 
-            <div class="daytwo col">Tuesday</div>
-            <div class="daythree col">Wednesday</div>
-            <div class="dayfour col">Thursday</div>
-            <div class="dayfive col">Friday</div>
+      <!-- Forecast 5 days-->
+      <div class="row futureForecast">
+        <!-- Current Day -->
+        
+        <div class="col-md-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Day 1</h5>
+              <p class="card-text">Temperature: 20°C</p>             
+            </div>
+          </div>
         </div>
-        <div class="row upperHalf">
-            <div class="col-md-6">
-              <div class="pb-3">
-                <input type="text" placeholder="Input Search City Here">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="pb-3">
-                <button class="btn btn-secondary">Clear button here</button>
-              </div>
+        <!-- Day 2 -->
+        <div class="col-md-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Day 2</h5>
+              <p class="card-text">Temperature: 30°C</p>              
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="pb-3">
-                Condition of weather here
-              </div>
+        </div>
+        <!-- Day 3 -->
+        <div class="col-md-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Day 3</h5>
+              <p class="card-text">Temperature: 40°C</p>  
             </div>
           </div>
-    </div>
+        </div>
+        <!-- Day 4 -->
+        <div class="col-md-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Day 4</h5>
+              <p class="card-text">Temperature: 50°C</p> 
+            </div>
+          </div>
+        </div>
+        <!-- Day 5 -->
+        <div class="col-md-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Day 5</h5>
+              <p class="card-text">Temperature: 60°C</p>              
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Search Bar -->
+      
+
+
+
+      </div>
+      <!-- End of Container -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="./assets/script/script.js"></script>
 </body>
 
 </html>
