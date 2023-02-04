@@ -1,121 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Forecast 5 Days</title>
-    <link rel="icon" type="image/x-icon" href="./assets/img/Papirus-Team-Papirus-Apps-Weather.ico">
-    <!-- Using BootStrap 4.6.1-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- https://cdnjs.com/ -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast 5 Days</title>
+  <link rel="icon" type="image/x-icon" href="./assets/img/Papirus-Team-Papirus-Apps-Weather.ico">
+  <!-- Using BootStrap 4.6.1-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- https://cdnjs.com/ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
-    <div class="jumbotron">
-        <h1 class="display-3">WeatherApiStation</h1>
-        <p class="lead">This WeatherApiStation is made with BootStrap and my first time implement API to my projects</p>
-        <hr class="my-4">
-        <p>GitHub</p>
+<div class="jumbotron">
+  <h1 class="display-3">WeatherApiStation</h1>
+  <p class="lead">This WeatherApiStation is made with BootStrap and my first time implement API to my projects</p>
+  <hr class="my-4">
+  <p>GitHub</p>
+</div>
+<!-- Container -->
+<div class="container text-center">
+  <!-- Forecast 5 days-->
+  <div class="row futureForecast">
+    <!-- Current Day -->
+
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-days">Day 1</h5>
+          <i class="fas fa-cloud"></i>
+          <p class="card-temps">Temperature: 20°C</p>
+        </div>
+      </div>
     </div>
-    <!-- Container -->
-    <div class="container text-center">
-      <!-- Forecast 5 days-->
-      <div class="row futureForecast">
-        <!-- Current Day -->
-        
-        <div class="col-md-2">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-days">Day 1</h5>
-              <i class="fas fa-cloud"></i>
-              <p class="card-temps">Temperature: 20°C</p>             
-            </div>
-          </div>
+    <!-- Day 2 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-days">Day 2</h5>
+          <i class="fas fa-cloud"></i>
+          <p class="card-temps">Temperature: 30°C</p>
         </div>
-        <!-- Day 2 -->
-        <div class="col-md-2">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-days">Day 2</h5>
-              <i class="fas fa-cloud"></i>
-              <p class="card-temps">Temperature: 30°C</p>              
-            </div>
-          </div>
+      </div>
+    </div>
+    <!-- Day 3 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-days">Day 3</h5>
+          <i class="fas fa-cloud"></i>
+          <p class="card-temps">Temperature: 40°C</p>
         </div>
-        <!-- Day 3 -->
-        <div class="col-md-2">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-days">Day 3</h5>
-              <i class="fas fa-cloud"></i>
-              <p class="card-temps">Temperature: 40°C</p>  
-            </div>
-          </div>
+      </div>
+    </div>
+    <!-- Day 4 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-days">Day 4</h5>
+          <i class="fas fa-cloud"></i>
+          <p class="card-temps">Temperature: 50°C</p>
         </div>
-        <!-- Day 4 -->
-        <div class="col-md-2">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-days">Day 4</h5>
-              <i class="fas fa-cloud"></i>
-              <p class="card-temps">Temperature: 50°C</p> 
-            </div>
-          </div>
+      </div>
+    </div>
+    <!-- Day 5 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-days">Day 5</h5>
+          <i class="fas fa-cloud"></i>
+          <p class="card-temps">Temperature: 60°C</p>
         </div>
-        <!-- Day 5 -->
-        <div class="col-md-2">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-days">Day 5</h5>
-              <i class="fas fa-cloud"></i>
-              <p class="card-temps">Temperature: 60°C</p>              
-            </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Bar City Name and Condition Displaying -->
+  <div class="container forecastToday">
+    <div class="row">
+      <div class="col-md-4">
+        <form>
+          <div class="form-group">
+            <input type="text" class="inputValue" id="citySearch" placeholder="City Name">
+          </div>
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+      </div>
+      <div class="col-md-2">
+        <h5 id="cityName">City Name</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="cityName">Weather Information</h5>
+            <i class="fas fa-cloud"></i>
+            <!-- adding icons to see if I can change according to weather -->
+            <p class="card-temps-current" id="temperature">Temperature: 20°F</p>
+            <!-- Kelvin subtracting 273.15 to calculate Celsius -->
           </div>
         </div>
       </div>
-
-      <!-- Search Bar City Name and Condition Displaying -->
-      <div class="container forecastToday">
-        <div class="row">
-          <div class="col-md-4">
-            <form>
-              <div class="form-group">
-                <input type="text" class="inputValue" id="citySearch" placeholder="City Name">
-              </div>
-              <button type="submit" class="btn btn-primary">Search</button>
-            </form>
-          </div>
-          <div class="col-md-2">
-            <h5 id="cityName">City Name</h5>
-          </div>
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Weather Information</h5>
-                <i class="fas fa-cloud"></i>
-                <!-- adding icons to see if I can change according to weather -->
-                <p class="card-temps-current" id="temperature">Temperature: 20°F</p>
-                <!-- Kelvin subtracting 273.15 to calculate Celsius -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      
-      
+    </div>
+  </div>
 
 
 
-      </div>
-      
-      <!-- End of Container -->
-      <footer>
-        <h2>Adding footer here to see margin bottom and clear view first</h2>
-      </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+
+</div>
+
+<!-- End of Container -->
+<footer>
+  <h2>Adding footer here to see margin bottom and clear view first</h2>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="./assets/script/script.js"></script>
 </body>
 

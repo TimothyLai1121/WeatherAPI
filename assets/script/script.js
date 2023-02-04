@@ -37,7 +37,7 @@ var cardTempsCurrent = document.querySelector('#temperature')
 
 var fiveDayForecast = [];
 
-button.addEventListener('click', function(event) {
+button.addEventListener('click', function (event) {
   event.preventDefault();
   var city = inputValue.value;
   var apiUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
@@ -54,9 +54,9 @@ button.addEventListener('click', function(event) {
       cardTempsCurrent.innerHTML = `Temperature: ${(data.list[0].main.temp - 273.15).toFixed(1)}°C`;
       */
       /* Just in case for Fahrenheit */
-       cardTempsCurrent.innerHTML = `Temperature: ${((data.list[0].main.temp - 273.15) * 9/5 + 32).toFixed(1)}°F`;
+      cardTempsCurrent.innerHTML = `Temperature: ${((data.list[0].main.temp - 273.15) * 9 / 5 + 32).toFixed(1)}°F`;
       /* local storage for search */
-      let cityData = {city: data.city.name, temperature: temperature};
+      let cityData = { city: data.city.name, temperature: temperature };
       localStorage.setItem(city, JSON.stringify(cityData));
       /* local storage showing city accurately but not displaying temperature */
 
