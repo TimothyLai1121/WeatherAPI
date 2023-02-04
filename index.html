@@ -11,6 +11,7 @@
     <!-- https://cdnjs.com/ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    
 </head>
     <div class="jumbotron">
         <h1 class="display-3">WeatherApiStation</h1>
@@ -19,7 +20,7 @@
         <p>GitHub</p>
     </div>
     <!-- Container -->
-    <div class="container">
+    <div class="container text-center">
       <!-- Forecast 5 days-->
       <div class="row futureForecast">
         <!-- Current Day -->
@@ -28,6 +29,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-days">Day 1</h5>
+              <i class="fas fa-cloud"></i>
               <p class="card-temps">Temperature: 20°C</p>             
             </div>
           </div>
@@ -37,6 +39,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-days">Day 2</h5>
+              <i class="fas fa-cloud"></i>
               <p class="card-temps">Temperature: 30°C</p>              
             </div>
           </div>
@@ -46,6 +49,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-days">Day 3</h5>
+              <i class="fas fa-cloud"></i>
               <p class="card-temps">Temperature: 40°C</p>  
             </div>
           </div>
@@ -55,6 +59,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-days">Day 4</h5>
+              <i class="fas fa-cloud"></i>
               <p class="card-temps">Temperature: 50°C</p> 
             </div>
           </div>
@@ -64,13 +69,41 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-days">Day 5</h5>
+              <i class="fas fa-cloud"></i>
               <p class="card-temps">Temperature: 60°C</p>              
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Search Bar -->
+      <!-- Search Bar City Name and Condition Displaying -->
+      <div class="container forecastToday">
+        <div class="row">
+          <div class="col-md-4">
+            <form>
+              <div class="form-group">
+                <input type="text" class="inputValue" id="citySearch" placeholder="City Name">
+              </div>
+              <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <h5 id="cityName">City Name</h5>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Weather Information</h5>
+                <i class="fas fa-cloud"></i>
+                <p class="card-temps-current" id="temperature">Temperature: 20°F</p>
+                <!-- Kelvin subtracting 273.15 to calculate Celsius -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
       
 
 

@@ -26,5 +26,35 @@ function getInfo(){
 console.log(newName); not Defined.
 console.log(cityName); Defined 
 */
+/* Formatting */
+/* api.openweathermap.org/data/2.5/forecast?q={cityName}&appid={apiKey} */
+let apiKey = "64af4cf1ecbdda50b562d1d35a8300f7";
 
-// Make a request to the OpenWeather API to retrieve the 5-day forecast
+var button = document.querySelector('.btn')
+var inputValue = document.querySelector('.inputValue')
+var cityName = document.querySelector('#cityName')
+var cardTempsCurrent = document.querySelector('#temperature')
+
+button.addEventListener('click', function(event) {
+  event.preventDefault();
+  var city = inputValue.value;
+  var apiUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
+
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+      cityName.innerHTML = data.city.name;
+      /* learn about deprecated so it will be switch to another name */
+      /* cityName is common */
+      cardTempsCurrent.innerHTML = `Temperature: ${data.list[0].main.temp}°C`;
+      /* adding Celcius = Kelvin - 273.15 */
+      /*
+      cardTempsCurrent.innerHTML = `Temperature: ${(data.list[0].main.temp - 273.15).toFixed(1)}°C`;
+      */
+      /* Just in case for Fahrenheit */
+       cardTempsCurrent.innerHTML = `Temperature: ${((data.list[0].main.temp - 273.15) * 9/5 + 32).toFixed(1)}°F`;
+
+
+    })
+    .catch(error => console.error(error));
+});
